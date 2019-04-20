@@ -19,15 +19,6 @@ module.exports = {
                 exclude:[resolve('node_modules')],
                 options:{
                     "presets":[ "@babel/preset-env"],
-                    plugins:{
-                        babelrcRoots: [
-                            // Keep the root as a root
-                            ".",
-                          
-                            // Also consider monorepo packages "root" and load their .babelrc files.
-                            "./../*"
-                          ]
-                    }
                 }
                 },
             {
