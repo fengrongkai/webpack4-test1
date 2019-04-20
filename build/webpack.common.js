@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 function resolve(dist){
-    return path.resolve(__dirname,dist);
+    return path.resolve(__dirname,'..',dist);
 }
 module.exports = {
     entry:'./src/index.js',
@@ -19,7 +19,10 @@ module.exports = {
                 exclude:[resolve('node_modules')],
                 options:{
                     "presets":[ "@babel/preset-env"],
-                }
+                 
+                    
+                },
+                
                 },
             {
                 test:/\.css$/,

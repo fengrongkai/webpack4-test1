@@ -98,11 +98,9 @@ __webpack_require__.r(__webpack_exports__);
 // let element = document.createElement('div');
 // element.innerHTML = a;
 // document.body.append(element);
-
 // let img = document.createElement('img');
 // img.src = imgSrc;
 // document.body.append(img);
-
 // var btn = document.createElement('button');
 // btn.innerHTML = "新增";
 // document.body.append(btn);
@@ -111,7 +109,6 @@ __webpack_require__.r(__webpack_exports__);
 //     div.innerHTML = 'item';
 //     document.body.appendChild(div);
 // }
-
 // import counter from './counter.js';
 // import number from './number.js';
 // counter();
@@ -126,12 +123,9 @@ __webpack_require__.r(__webpack_exports__);
 //     })
 // }
 
-
-
 /**
  * 3-11
  */
-
 //  import "@babel/polyfill"
 //  var arr = [      
 //      new Promise(()=>{}),
@@ -148,9 +142,10 @@ __webpack_require__.r(__webpack_exports__);
  * 所以require不支持treeshaking的方式
  */
 
-let wc = 10000;
-const fc = 2000;
-Object(_math_js__WEBPACK_IMPORTED_MODULE_0__["add"])(1,9);
+var wc = 10000;
+var fc = 2000;
+var bw = 9999;
+Object(_math_js__WEBPACK_IMPORTED_MODULE_0__["add"])(1, 9);
 
 /***/ }),
 /* 1 */
@@ -160,13 +155,13 @@ Object(_math_js__WEBPACK_IMPORTED_MODULE_0__["add"])(1,9);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add", function() { return add; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "minus", function() { return minus; });
-const add =(a,b)=>{
-    console.log(a+b)
-}
-const minus = (a,b)=>{
-    console.log(a - b)
-}
+var add = function add(a, b) {
+  console.log(a + b);
+};
+var minus = function minus(a, b) {
+  console.log(a - b);
+};
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.583d150c96fc3d63a9f0.js.map
+//# sourceMappingURL=main.29d4f980b6b5110faf7f.js.map
