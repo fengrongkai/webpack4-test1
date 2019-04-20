@@ -57,4 +57,5 @@
 import {add} from './math.js';
 let wc = 10000;
 const fc = 2000;
+let bw = 9999;
 add(1,9);
