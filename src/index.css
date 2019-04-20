@@ -1,0 +1,10 @@
+body{
+    /* background: green; */
+}
+div{
+    height:20px;
+    font-size:18px;
+}
+div:nth-of-type(odd){
+    background:green;
+}
