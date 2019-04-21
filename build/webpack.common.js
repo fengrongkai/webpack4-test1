@@ -5,7 +5,10 @@ function resolve(dist){
     return path.resolve(__dirname,'..',dist);
 }
 module.exports = {
-    entry:'./src/index.js',
+    entry:{
+        manin:'./src/index.js',
+        lodash:'./src/lodash.js'
+    },
     output:{ 
         filename:'[name].[hash].js',
         path:path.resolve(__dirname,'../dist'),
