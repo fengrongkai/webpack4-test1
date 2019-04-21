@@ -54,8 +54,15 @@
  * treeshaking 只支持静态方式的映入 es module 的 import方式是静态的引入，require的方式是动态的映入
  * 所以require不支持treeshaking的方式
  */
-import {add} from './math.js';
-let wc = 10000;
-const fc = 2000;
-let bw = 9999;
-add(1,9);
+// import {add} from './math.js';
+// let wc = 10000;
+// const fc = 2000;
+// let bw = 9999;
+// add(1,9);
+
+
+/**
+ *  4-3 代码分割
+ */
+import _ from "lodash";
+console.log(_.join(['a','b','c']));

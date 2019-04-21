@@ -8,7 +8,7 @@ module.exports = {
     entry:'./src/index.js',
     output:{ 
         filename:'[name].[hash].js',
-        path:path.resolve(__dirname,'dist'),
+        path:path.resolve(__dirname,'../dist'),
     },
     module:{
         rules:[
@@ -17,13 +17,7 @@ module.exports = {
                 loader:'babel-loader',
                 include:[resolve('src')],
                 exclude:[resolve('node_modules')],
-                options:{
-                    "presets":[ "@babel/preset-env"],
-                 
-                    
-                },
-                
-                },
+                 },
             {
                 test:/\.css$/,
                 loader:[
