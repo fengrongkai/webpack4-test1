@@ -6,8 +6,7 @@ function resolve(dist){
 }
 module.exports = {
     entry:{
-        manin:'./src/index.js',
-        lodash:'./src/lodash.js'
+        manin:'./src/index.js'
     },
     output:{ 
         filename:'[name].[hash].js',
@@ -67,5 +66,9 @@ module.exports = {
             filename:'index.html'
         }),
     ],
-    
+    optimization:{
+        splitChunks:{
+            chunks:'all',
+        }
+    }
 }
